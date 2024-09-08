@@ -9,9 +9,9 @@
 
 ---
 
-### Name: Enter your name
+### Name: Jim Swain
 
-### Email: Enter your OU email
+### Email: js198623@ohio.edu
 
 ---
 
