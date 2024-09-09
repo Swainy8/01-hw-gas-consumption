@@ -53,16 +53,17 @@
     double total_miles = town_miles + highway_miles;
     double total_consumption = town_consumption + highway_consumption;
 
+    cout << fixed << setprecision(1);
     cout << endl << "--------------- Gas consumption ---------------" << endl;
-    cout << "The number of miles driven in town: " << fixed << setprecision(1) << town_miles << " miles" << endl;
-    cout << "The gas consumption for town driving: " << fixed << setprecision(1) << town_consumption << " gallons" << endl;
-    cout << "The number of miles driven on the highway: " << fixed << setprecision(1) << highway_miles << " miles" << endl;
-    cout << "The gas consumption for highway driving: " << fixed << setprecision(1) << highway_consumption << " gallons" << endl;
-    cout << "The total miles driven: " << fixed << setprecision(1) << total_miles << " miles" << endl;
-    cout << "The total gas consumption: " << fixed << setprecision(1) << total_consumption << " gallons" << endl;
+    cout << "The number of miles driven in town: " << town_miles << " miles" << endl;
+    cout << "The gas consumption for town driving: " << town_consumption << " gallons" << endl;
+    cout << "The number of miles driven on the highway: " << highway_miles << " miles" << endl;
+    cout << "The gas consumption for highway driving: " << highway_consumption << " gallons" << endl;
+    cout << "The total miles driven: " << total_miles << " miles" << endl;
+    cout << "The total gas consumption: " << total_consumption << " gallons" << endl;
     if (total_consumption > 0) {
         double avg_mpg = total_miles / total_consumption;
-        cout << "The average mpg for the trip: " << fixed << setprecision(1) << avg_mpg << " miles/gallon" << endl;
+        cout << "The average mpg for the trip: " << avg_mpg << " miles/gallon" << endl;
     } else {
         cout << "No average can be calculated" << endl;
     }
